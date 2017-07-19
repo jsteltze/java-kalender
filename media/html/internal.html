@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Intern</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<br>Dieses Programm ist in Java geschrieben und ben&ouml;tigt zum Laufen nur die Java Runtime Environment (<a href="https://www.java.com/de/download/">JRE</a>) Version 8. Damit kann der Kalender auf allen Betriebssystemen benutzt werden, f&uuml;r die Java verf&uuml;gbar ist.<br>Der <a href="http://sourceforge.net/projects/java-kalender/files/">Quellcode</a> des Programms ist frei verfügbar.
+<br>
+<br>Der Kalender speichert alle Einstellungen und Ereignisse in der Datei <code>Kalender.xml</code>, die sich neben der Programm-Datei <code>Kalender.jar</code> befinden muss. Existiert so eine Datei noch nicht, so wird sie neu angelegt. Ab 7 Tagen wird ein Backup der Datei XML-Datei erzeugt (<code>Kalender-&lt;<i>Datum</i>&gt;.xml</code>). Damit kann notfalls auf &auml;ltere Versionen der Einstellungen bzw. Ereignisse zur&uuml;ck gegriffen werden (ein Wiederherstellen muss manuell erfolgen).
+<br>Aufgrund der m&ouml;glichen Gr&ouml;&szlig;e von Notizen und Anh&auml;ngen werden diese nicht mit in <code>Kalender.xml</code> gespeichert, sondern in dem Ordner <code>Kalender.Events</code>. Notizen und Anh&auml;nge befinden sich in Unterordnern f&uuml;r das jeweilige Ereignis. Der Unterordner hat als Namen die eindeutige ID des Ereignisses (die ID ist f&uuml;r den Nutzer normalerweise nicht sichtbar und wird mit in <code>Kalender.xml</code> abgespeichert).
+<br>Soll also der Kalender verschoben werden (dazu vorher beenden!) oder soll ein Backup angelegt werden, so m&uuml;ssen <code>Kalender.xml</code>, <code>Kalender.Events</code> und <code>Kalender.jar</code> kopiert bzw. verschoben werden.
+<br>
+<br>Um zu verhindern, dass der Kalender mehrfach ausgef&uuml;hrt wird (f&uuml;hrt zu Inkonsistenzen in den Einstellungen und Ereignissen), legt das Programm beim Start eine Datei <code>Kalender.lock</code> an und entfernt diese beim Beenden wieder. Beim Start des Programms wird zun&auml;chst gepr&uuml;ft, ob <code>Kalender.lock</code> bereits existiert. Um jedoch zu verhindern, dass sich der Kalender nicht mehr starten l&auml;sst, weil zuvor <code>Kalender.lock</code> nicht richtig entfernt werden konnte, legt die vermeintlich zweite Programm-Instanz eine Datei <code>Kalender.maximize</code> an. &Uuml;ber diese Datei wird kommuniziert, dass eine zweite Kalender-Instanz gerne starten w&uuml;rde. Wird <code>Kalender.maximize</code> wieder entfernt, so ist das das Zeichen, dass bereits ein Kalender l&auml;uft (evtl. unsichtbar im Hintergrund). Die zweite Instanz beendet sich wieder und der laufende Kalender kommt in den Vordergrund. Wird <code>Kalender.maximize</code> nicht entfernt, so ist das das Zeichen, dass kein anderer Kalender l&auml;uft und <code>Kalender.lock</code> nicht sauber entfernt werden konnte.  
+<br>
+<br>Der Kalender kann auch mit Parametern gestartet werden. Der Kommandozeilen-Aufruf ist <code>java -jar Kalender.jar &lt;Parameter&gt;</code>. Neben den Standard-Java-Optionen stehen folgende Parameter zur Verf&uuml;gung:
+<ul>
+<li><code>--maximized</code><br>Den Kalender maximiert (volle Fenstergr&ouml;&szlig;e) starten.
+<li><code>--workspace=[path]</code><br>Anstelle des aktuellen Ordners wird <code>[path]</code> als Arbeitsverzeichnis verwendet. Somit kann der Ort von <code>Kalender.jar</code> getrennt werden von den Benutzerdaten <code>Kalender.xml</code> und <code>Kalender.Events</code>.     
+<li><code>--view=[YEAR|MONTH|WEEK|DAY]</code><br>Den Kalender (abweichend von der letzten Einstellung) in einer Ansicht starten. 
+<li><code>--size=WIDTHxHEIGHT</code><br>Den Kalender in den angegebenen Fenstergr&ouml;&szlig;e starten.
+<li><code>--logLevel=[LEVEL]</code><br>Den Kalender mit dem angegebenen Log-Level starten. M&ouml;gliche Werte: ALL,FINE,INFO,SEVERE,WARNING. Das Log-Level kann auch zur Laufzeit in den Einstellungen ge&auml;ndert werden. Das Log-Level betrifft sowohl die Logdatei <code>Kalender.log</code> als auch die grafische Ausgabe in das Log-Fenster.
+<li><code>--version</code><br>Versionsinformationen anzeigen und danach beenden.
+</ul>                   
+
+</body>
+</html>

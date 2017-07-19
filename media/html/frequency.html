@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Regelm&auml;&szlig;igkeiten</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<br>F&uuml;r eint&auml;gige Ereignisse k&ouml;nnen folgende Regelm&auml;&szlig;igkeiten eingestellt werden. Prinzipiell gilt, dass die Regelm&auml;&szlig;igkeit auf das Datum bezogen wird, auf das geklickt wurde, um das Ereignis einzustellen. Das geklickte Datum muss also schon ein Teil in der Serie sein. Soll bspw. ein Geburtstag am 15.8. eingestellt werden, so muss ein neues Ereignis an einem 15.8. (egal welches Jahr) angelegt werden und in den Ereignis-Optionen muss die Regelm&auml;&szlig;igkeit entsprechend eingestellt werden.<br>Einzelne Tage k&ouml;nnen als Ausnahme von der Regelm&auml;&szlig;igkeit angegeben werden. Mehr dazu unten.
+<br><br>
+<b>&raquo;nach Datum:</b>
+<br>Die Regelm&auml;&szlig;igkeit bezieht sich auf das ausgew&auml;hlte Datum (Nummer des Tages/Monats). Die Kombination aus w&ouml;chentlichem, monatlichem und j&auml;hrlichem Auftreten ergibt folgende M&ouml;glichkeiten:
+<ul>
+<li>w&ouml;chentlich: Das Ereignis erscheint jede Woche, aber nur in DIESEM EINEN Monat (also insgesamt nur 4 bis 5 Mal).<br><img src="freq_w.png"/>
+<li>w&ouml;chentlich + monatlich: Das Ereignis erscheint jede Woche aber nur in DIESEM Jahr (also insgesamt 52/53 Mal).<br><img src="freq_wm.png"/>
+<li>w&ouml;chentlich + monatlich + j&auml;hrlich: Das Ereignis erscheint jede Woche (unbegrenzt).<br><img src="freq_wmy.png"/>
+<li>w&ouml;chentlich + j&auml;hrlich: Das Ereignis erscheint jedes Jahr in DIESEM Monat jede Woche (unbegrenzt).<br><img src="freq_wy.png"/>
+<li>monatlich: Das Ereignis erscheint jeden Monat aber nur in DIESEM Jahr (also insgesamt 12 Mal).<br><img src="freq_m.png"/>
+<li>monatlich + j&auml;hrlich: Das Ereignis erscheint jeden Monat zum ausgew&auml;hlten Tag (unbegrenzt). Diese Einstellung eignet sich f&uuml;r monatliche Ereignisse wie z.B. f&auml;llige Mietzahlung oder Gehalts&uuml;berweisung.<br><img src="freq_my.png"/>
+<li>j&auml;hrlich: Das Ereignis erscheint jedes Jahr zum ausgew&auml;hlten Datum (unbegrenzt). Diese Einstellung eignet sich f&uuml;r j&auml;hrliche Ereignisse wie z.B. Geburtstage.<br><img src="freq_y.png"/>
+</ul>
+Bei monatlichen Regelm&auml;&szlig;igkeiten ist zu beachten, dass die Monate unterschiedliche Anzahl von Tagen haben. Wird bspw. der 31. Januar ausgew&auml;hlt, so kann das Ereignis bei monatlicher Regelm&auml;&szlig;igkeit nur jeden 2. Monat auftauchen.
+<br><br>
+<b>&raquo;nach Wochentag im Monat:</b>
+<br>Dies ist eine monatliche Regelm&auml;&szlig;igkeit. Im Gegensatz zur Auswahl '<i>nach Datum</i>' bezieht sich die Serie jedoch nicht auf die Nummer des ausgew&auml;hlten Tages, sondern auf den Abstand des ausgew&auml;hlten Tages zum Monatsbeginn. Damit sind Regelm&auml;&szlig;igkeiten wie z.B. '<i>jeder erste Dienstag im Monat</i>' m&ouml;glich. Befindet sich der ausgew&auml;hlte Tag in der letzten Woche eines Monats, so sind Regelm&auml;&szlig;igkeiten wie '<i>jeder letzte Freitag im Monat</i>' m&ouml;glich.
+<br><br>
+<b>&raquo;nach Abstand:</b>
+<br>Auf Basis des ausgew&auml;hlten Tages kann eine Regelm&auml;&szlig;igkeit nach einem beliebigen Abstand eingestellt werden (z.B. aller 3 Tage). Einige Gemeinsamkeiten und Unterschiede zur Auswahl '<i>nach Datum</i>' seien hier aufgez&auml;hlt:
+<ul>
+<li>der Abstand 7 Tage ist gleichbedeutend mit der Auswahl '<i>nach Datum</i>': w&ouml;chtentlich + monatlich + j&auml;hrlich
+<li>der Abstand 1 Monat ist gleichbedeutend mit der Auswahl '<i>nach Datum</i>': monatlich + j&auml;hrlich
+<li>der Abstand 1 Jahr ist gleichbedeutend mit der Auswahl '<i>nach Datum</i>': j&auml;hrlich
+<li>der Abstand 12 Monate ist gleichbedeutend mit der Auswahl '<i>nach Datum</i>': j&auml;hrlich
+<li>der Abstand 365 Tage ist NICHT gleichbedeutend mit der Auswahl '<i>nach Datum</i>': j&auml;hrlich, denn Schaltjahre haben weniger Tage
+</ul>
+<br>
+<b>&raquo;nach Monatsende:</b>
+<br>Dies ist eine monatliche Regelm&auml;&szlig;igkeit, die sich auf den Abstand des ausgew&auml;hlten Tages zum Monatsende bezieht (z.B. 3 Tage vor Ende des Monats).
+<br><br>
+<b>&raquo;Ausnahmen:</b>
+<br>Im (erweiterten) Dialogfenster zum Bearbeiten eines Ereignisses lassen sich Ausnahmen von der Regelm&auml;&szlig;igkeit anzeigen und bearbeiten. Das sind Tage, an denen das Ereignis trotz der Regelm&auml;&szlig;igkeit <i>nicht</i> stattfindet. Alternativ lässt sich eine Ausnahme definieren, indem am jeweiligen Tag das Ereignis gelöscht wird, mit der Option '<i>nur dieses Datum</i>'. Ist ein Datum, das als Ausnahme definiert wurde veraltet, so wird es nach 30 Tagen aus der Liste der Ausnahmen entfernt. Damit wird verhindert, dass die Liste der Ausnahmen &uuml;ber die Zeit immer gr&ouml;&szlig;er wird.
+<br>
+</body>
+</html>

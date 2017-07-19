@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Erinnerungen</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<br>Zun&auml;chst erscheint beim Start des Kalenders eine &Uuml;bersicht von anstehenden Terminen. Ma&szlig;geblich ist hierbei, ob der eingestellte Erinnerungs-Abstand (global in den <a href="settings.html">Einstellungen</a> oder individuell je <a href="events.html">Ereignis</a>) erreicht ist.
+<br>Dazu ein paar Beispiele:
+<ul>
+<li><b>Bei Beginn</b>: Es erscheint erst eine Erinnerung, wenn das Ereignis beginnt. F&uuml;r Ereignisse mit Uhrzeit muss die Uhrzeit erreicht sein (oder sp&auml;ter). F&uuml;r Ereignisse ohne Uhrzeit muss derselbe Tag erreicht sein.
+<li><b>5 Stunden vorher</b>: Es erscheint erst eine Erinnerung 5 Stunden vor Beginn des Ereignisses (oder k&uuml;rzer). F&uuml;r Ereignisse ohne Uhrzeit gilt 0 Uhr implizit als Uhrzeit. Also beginnt die Erinnerung in diesem Beispiel ab 19 Uhr am Vortag.
+<li><b>3 Tage vorher</b>: Es erscheint erst eine Erinnerung 3 Tage vor Beginn des Ereignisses (oder k&uuml;rzer). Die Uhrzeit des Ereignisses ist hierbei nicht relevant.
+</ul>
+<br>In jedem Fall wird immer an abgelaufene Ereignisse erinnert. Ein Ereignis gilt als abgelaufen, wenn das Datum in der Vergangenheit liegt und das Ereignis (durch <a href="frequency.html">Regelm&auml;&szlig;igkeiten</a>) auch in Zukunft nicht wiederkehren wird. Der Benutzer wird also stets dazu animiert, abgelaufene Ereignisse zu behandeln (z.B. l&ouml;schen oder verschieben).
+<br>Im Fenster der anstehenden Termin k&ouml;nnen &uuml;ber das Kontext-Men&uuml; (rechte Maustaste &uuml;ber dem jeweiligen Ereignis) die Ereignis-Optionen aufgerufen werden:
+<ul>
+<li>Ereignis <b>bearbeiten</b> (nicht f&uuml;r Feiertage)
+<li>Ereignis <b>l&ouml;schen</b> (bei Feiertage gelangt man hier in die <a href="settings.html">Einstellungen</a> f&uuml;r die Feiertage)
+<li>Ereignis <b>exportieren</b> (als XML oder als iCal zum Import in andere Programme)
+<li><b>Erinnerung</b> an dieses Ereignis aufrufen (siehe unten)
+<li><b>Dateianhang</b> oder <b>Notizen</b> &ouml;ffnen (nur wenn vorhanden)
+</ul>
+<br>Das Fenster der anstehenden Termine kann man jederzeit wieder &uuml;ber die <a href="settings.html">Einstellungen</a> aufrufen oder durch Beenden und Neustarten des Kalenders.
+<br>Neben der initialen Erinnerung an anstehende Termine, gibt es Erinnerungs-Fenster f&uuml;r einzelne Ereignisse. Falls beim Start des Kalenders nur ein Ereignis ansteht, erscheint ein individuelles Erinnerungs-Fenster. Alternativ kann das Fenster &uuml;ber das Kontextmen&uuml; (rechte Maustaste) von Ereignissen aufgerufen werden.
+<br>Das individuelle Erinnerungs-Fenster zeigt alle Informationen zu einem Ereignis an und bietet die M&ouml;glichkeit einen Wecker zu stellen, sodass das Erinnerungs-Fenster nach einer bestimmten Zeit erneut erscheint. Hier gibt es folgende M&ouml;glichkeiten:
+<ul>
+<li><b>Erinnerung nach Zeitspanne:</b> Das Erinnerungs-Fenster erscheint nach der angegeben Zeitdauer erneut (z.B. nach 30 Minuten). Falls das Ereignis eine Uhrzeit hat, die in der Zukunft liegt, so gibt es stattdessen die Option:
+<li><b>Erinnerung vor Beginn:</b> Das Erinnerungs-Fenster erscheint nach der angegeben Zeitdauer vor Beginn des Ereignisses erneut (z.B. nach 10 Minuten vor Beginn).
+<li><b>Erinnerung zu Uhrzeit:</b> Das Erinnerungs-Fenster erscheint zur angegebenen Uhrzeit erneut (z.B. 18:30 Uhr).
+</ul>
+<br>Im rechten Teil der Men&uuml;leiste des Fensters (oben) k&ouml;nnen ebenfalls die Ereignis-Optionen aufgerufen werden.
+<br>Beide Arten von Erinnerungs-Fenstern erscheinen standardm&auml;&szlig;ig zusammen mit einer Erinnerungs-Melodie. Diese Melodie kann &uuml;ber die <a href="settings.html">Einstellungen</a> ge&auml;ndert oder deaktiviert werden.
+
+</body>
+</html>

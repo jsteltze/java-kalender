@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Einstellungen</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<br>&Uuml;ber das Icon <img src="../settings.png"/> l&auml;sst sich das Einstellungsfenster &ouml;ffnen. Folgende Abschnitte gibt es:
+<br><br>
+<b>&raquo;Allgemein:</b>
+<br>Hier kann das Verhalten und die Erscheinung des Kalenders ge&auml;ndert werden.
+<ul>
+<li>Arbeitsverzeichnis: Der Ordner, den der Kalender zum Speichern/Lesen von Einstellungen und Ereignissen verwendet (Datei <code>Kalender.xml</code> und Ordner <code>Kalender.Events</code>). Das Verzeichnis kann im laufenden Betrieb nicht ge&auml;ndert werden. Standardm&auml;&szlig; ist das Arbeitsverzeichnis immer der Ordner, von dem aus Java die Datei <code>Kalender.jar</code> ausgef&uuml;hrt. Ein abweichendes Arbeitsverzeichnis kann &uuml;ber per Kommandozeilenparameter beim Starten des Kalenders angegeben werden (siehe <a href="internal.html">Intern</a>). 
+<li>Aktion beim Schlie&szlig;en des Fensters: Soll der Kalender beim Schlie&szlig;en des Fensters beendet werden? Dann gehen laufende Erinnerungen verloren. Alternativ wird der Kalender unsichtbar, l&auml;uft aber im Hintergrund weiter. Es erscheint ein Icon im Systray. Erinnerungsfenster k&ouml;nnen so weiterhin erscheinen.
+<li>Aktion beim Klick auf ein Ereignis: Was soll geschehen, wenn ein Ereignis im Kalender angeklickt wird?
+<li>Aktion beim Klick auf einen Tag: Was soll geschehen, wenn Tag (Datum) im Kalender angeklickt wird?
+<li>Automatisch nach Updates suchen: Standardm&auml;&szlig;ig pr&uuml;ft der Kalender 5 Minuten nach Start auf der Seite <a href="http://java-kalender.sf.net">http://java-kalender.sf.net</a>, ob es eine neue Programmversion gibt.
+<li>Im Systray starten: Soll der Kalender beim Starten unsichtbar bleiben und nur im Hintergrund laufen oder soll beim Starten normal die Programmoberfl&auml;che erscheinen? Erinnerungsfenster sind davon nicht betroffen.
+<li>Mondphasen anzeigen: Sollen im Kalender die Mondphasen mit angezeigt werden? Hinweis: Bei der Berechnung der Mondphasen kann es zu Ungenauigkeiten kommen, sodass die Mondphasen hier von denen anderer Kalender um 1 Tag abweichen k&ouml;nnen. In der Regel l&auml;sst sich ohenhin eine Mondphase nie exakt auf genau einen Abend festlegen (abh&auml;ngig vom Ort; Mond und Erde bewegen sich kontinuierlich &#9786;). Eine angezeigte Mondphase an einem Datum meint, dass diese Mondphase in der Nacht dieses Tages zum darauffolgenden Tag auftritt.
+<li>Button-Texte anzeigen: Gen&uuml;gen zur Bedienung auch die Icons der Buttons?
+<li>Look and Feel: Dies ist das Layout und Design von den Standard-Fenster-Komponenten (Buttons, Checkboxen, Scrollbalken usw.). Hier stehen verschiedene Designs zur Auswahl, die Java anbietet. 'System' meint das Standard-Design des Betriebssystems.
+<li>Wochenbeginn: In normalen (&#9786;) L&auml;ndern beginnt die Woche mit Montag. In anderen L&auml;ndern ist Sonntag der Beginn der Woche. Achtung: Das bedeutet auch Abweichungen bei den Kalenderwochen!
+<li>anstehende Ereignisse anzeigen: Hier kann das Startfenster mit den anstehenden Ereignissen erneut aufgerufen werden.
+<li>Standard-Abstand: Wie viel Zeit vorher soll an anstehende Ereignisse erinnert werden? Diese Einstellung gilt nur f&uuml;r Ereignisse, die keine <a href="events.html">individuelle Erinnerung</a> haben.
+<li>Melodie: Welche Melodie soll bei der Erinnerungen abgespielt werden? Es kann auch eine Datei vom Computer ausgew&auml;hlt werden, aber momentan werden nur wav-Dateien unterst&uuml;tzt. &Uuml;ber den Play-Button kann die aktuelle Auswahl getestet werden.
+<li>an Zeitumstellung erinnern: Soll der Kalender an die zwei Zeitumstellungen (Sommerzeit, Winterzeit) erinnern?
+</ul>
+<br>
+<b>&raquo;Feiertage:</b>
+<br>Hier k&ouml;nnen Feiertage und Welt-/Aktionstage an- oder abgew&auml;hlt werden, die im Kalender erscheinen sollen. Dies sind normale Ereignisse, die jedoch nicht bearbeitet werden k&ouml;nnen. W&auml;hrend manche Feiertage immer an einem festen Datum stattfinden (k&ouml;nnten durch normale regelm&auml;&szlig;ige Ereignisse nachgebildet werden), berechnet sich das Datum anderer Feiertage (z.B. Advent) durch kompliziertere Formeln, die sich nicht durch einfache Regelm&auml;&szlig;igkeiten abbilden lassen.
+<br>Es wird unterschieden zwischen gesetzlichen Feiertagen (unterschiedlich je nach Bundesland), sonstigen Feiertagen (in der Regel kein arbeitsfrei) und Welt-/Aktionstagen.
+<br><br>
+<b>&raquo;Farben:</b>
+<br>Hier k&ouml;nnen Farben f&uuml;r Darstellungen in der Kalender-Oberfl&auml;che ge&auml;ndert werden. Zun&auml;chst ist rechts auszuw&auml;hlen, wo die Farbe ge&auml;ndert werden soll. &Uuml;ber den Farbw&auml;hler kann &uuml;ber die Auswahl von Blau-, Gr&uuml;n- und Rot-Komponente eine beliebige Farbe erzeugt werden (additive Farbmischung). In dem Quadrat sind zun&auml;chst Blau- und Gr&uuml;n-Wert auszuw&auml;hlen (durch Anklicken eines Punkts im Quadrat), wobei oben links beide Komponenten 0 sind und unten rechts ihren Maximal-Wert von 255 erreichen. Rot hat zun&auml;chst den Wert 128 (Mittelwert). Nach Auswahl einer Blau-Gr&uuml;n-Koordinate ist der Rot-Wert durch Klick auf den Streifen darunter auszuw&auml;hlen (von 0 links bis 255 rechts). Die resultierende Farbe wird im Farbrechteckt bei der jeweiligen Auswahl rechts angezeigt. Zus&auml;tzlich werden die aktuellen Farbwerte in den Textfeldern angezeigt. Alternativ kann eine Farbe auch durch Eingabe der Werte in den Textfeldern erzeugt werden.
+<br>Charakteristische Farben sind: Wei&szlig; (R=255,G=255,B=255), Schwarz (R=0,G=0,B=0), Graustufen (R=G=B), Rot (G=0,B=0), Gr&uuml;n (B=0,R=0), Blau (R=0,G=0), Gelb (R=255,G=255,B=0).
+<br><br>
+<b>&raquo;Import/Export:</b>
+<br>Hier k&ouml;nnen Einstellungen und Ereignisse des Kalenders in eine Datei exportiert oder aus einer bestehenden Datei importiert werden. Als Datei-Format wird XML (eigenes Schema zur Verwaltung von Ereignissen und Einstellungen) und <a href="https://www.ietf.org/rfc/rfc2445.txt">iCal/ics</a> (standardisiertes Format zum Austausch von Kalenderinhalten) unterst&uuml;tzt. XML eignet sich zum Austausch zwischen Java-Kalendern (kann sonst von keinem anderen Programm verarbeitet werden). iCal eignet sich zum Austausch mit anderen Kalender-Programmen wie z.B. Outlook oder Thunderbird.
+<br>Zun&auml;chst steht die Einstellung auf 'Export'. Im rechten Teil des Fensters werden alle bisher gespeicherten Einstellungen des Kalenders und alle Ereignisse aufgelistet. Zu exportierende Inhalte m&uuml;ssen angehakt werden. Anschlie&szlig;end kann &uuml;ber den Button 'Datei...' ein Datei auf dem Computer bestimmt werden, in die exportiert werden soll. Je nach Dateierweiterung (<code>.xml</code> oder <code>.ics</code>/<code>.ical</code>) wird das XML- oder iCal-Format verwendet.
+<br>Beim Export sind folgende Hinweise zu beachten:
+<ul>
+<li>Export als XML: Notizen und Anh&auml;nge sind KEIN Bestandteil der XML-Datei und k&ouml;nnen nur manuell mit &uuml;bermittelt werden.
+<li>Export als iCal: Einstellungen des Kalenders k&ouml;nnen nicht mit exportiert werden (geh&ouml;ren nicht zum iCal-Standard).
+</ul>
+Zum Import von Inhalten, muss die Auswahl auf 'Import' gestellt werden. Anschlie&szlig;end kann &uuml;ber den Button 'Datei...' eine Datei auf dem Computer (xml oder ics/ical) ausgew&auml;hlt werden, die eingelesen werden soll. In der rechten Seite werden dann alle Einstellungen (nur bei XML-Dateien) und Ereignisse aufgelistet, die aus der Datei gelesen werden konnten. Die Inhalte sind noch nicht importiert! Zun&auml;chst ist durch Anhaken auszuw&auml;hlen, welche Inhalte importiert werden sollen. Im letzten Schritt wird der Import der ausgew&auml;hlten Inhalte durch den OK-Button durchgef&uuml;hrt.
+<br>Beim Import sind folgende Hinweise zu beachten:
+<ul>
+<li>Import von XML: Notizen und Anh&auml;nge sind KEIN Bestandteil der XML-Datei. Zu importierende Einstellungen &uuml;berschreiben die aktuellen Einstellungen. Zu importierende Ereignisse werden als normale Ereignisse hinzugef&uuml;gt.
+<li>Import von iCal: Innerhalb von <code>VEVENT</code>-Bl&ouml;cken werden nur die Attribute <code>SUMMARY</code> (als Notizen), <code>DESCRIPTION</code> (als Ereignis-Name), <code>DTSTART</code> (als Startdatum, ggf. mit Uhrzeit), <code>DTEND</code> (optional als Endedatum), <code>ATTACH</code> (optionaler Anhang) und <code>RRULE</code> (als Regelm&auml;&szlig;igkeit) ausgewertet. Bei den Regelm&auml;&szlig;igkeiten (<code>RRULE</code>) k&ouml;nnen nur jene verarbeitet werden, die sich auf die Regelm&auml;&szlig;igkeiten dieses Kalenders &uuml;bertragen lassen. iCal bietet dar&uuml;ber hinaus weitere Varianten an, die derzeit noch nicht unterst&uuml;tzt werden (in solchen F&auml;llen erh&auml;lt das zu importierende Ereignis eine allgemeinere oder gar keine Regelm&auml;&szlig;igkeit).  
+</ul>
+<br>
+<b>&raquo;Programminfo:</b>
+<br>Hier werden technische Informationen zur aktuell verwendeten Programmversion angezeigt.
+<br>&Uuml;ber den Button 'Nach neuer Version suchen' kann gepr&uuml;ft werden, ob die Programmversion aktuell ist und ggf. ein Update des Programms durchgef&uuml;hrt werden.
+<br>&Uuml;ber den Button 'Lizenz-Informationen' wird die Software-Lizenz angezeigt und die Lizenzen von verwendeten, fremden Icons.
+<br>&Uuml;ber den Button 'Log' werden die bisherigen Log-Meldungen in einem Textfeld angezeigt. Hier kann auch das Log-Level ge&auml;ndert werden. Alle Log-Meldungen werden parallel in die Logdatei <code>Kalender.log</code> und in dieses Textfeld geschrieben.
+<br>Mit den 'Hilfe'-Button wird dieses Hilfe-Fenster ge&ouml;ffnet. 
+
+</body>
+</html>

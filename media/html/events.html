@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Ereignisse</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<br>Als Ereignis z&auml;hlt jede Art von Termin, Begebenheit oder Vorkommnis, das an einem bestimmten Datum stattfindet. Ereignisse k&ouml;nnen sich auch &uuml;ber mehrere Tage erstrecken. Zus&auml;tzlich zum Datum muss ein Ereignis einen Namen (max. 30 Zeichen) haben. Ereignisse werden mit ihrem Namen im Kalender am jeweiligen Tag dargestellt.
+<br>Dar&uuml;ber hinaus k&ouml;nnen Ereignisse mehrere optionale Informationen enthalten:
+<ul>
+<li><b>Notizen:</b> Die Notizen k&ouml;nnen genutzt werden, um zus&auml;tzliche Informationen zum Ereignis zu speichern, f&uuml;r die der Platz im Namen nicht reicht. Z.B. Anfahrtsbeschreibung, Kontaktdaten, Hintergr&uuml;nde zum Ereignis usw. Die Notizen werden f&uuml;r jedes Ereignis in einer Datei <code>notes.txt</code> gespeichert.
+<li><b>Anhang:</b> Ein Ereignis kann mit einer Datei auf dem Computer verkn&uuml;pft werden. Diese Datei kann dann bei <a href="remind.html">Erinnerungen</a> direkt ge&ouml;ffnet werden. Sollen mehrere Dateien angehangen werden, so m&uuml;ssen die Dateien vorher &uuml;ber ein Packprogramm zu einem Archiv zusammengefasst werden.
+<li><b>Uhrzeit:</b> Termine haben in der Regel eine Uhrzeit. Ganzt&auml;tige Ereignisse wie z.B. Geburtstage ben&ouml;tigen dagegen keine Uhrzeit. Im aktuellen Entwicklungstand des Kalenders wird noch keine Endezeit oder Angabe einer Zeitdauer unterst&uuml;tzt.
+<li><b>Kategorie:</b> Zur besseren Einteilung und Sortierung k&ouml;nnen Ereignisse einigen fest vorgegebenen Kategorien zugeordnet werden.
+<li><b><a href="frequency.html">Regelm&auml;&szlig;igkeit</a>:</b> Ereignisse k&ouml;nnen verschiedene Formen von Regelm&auml;&szlig;igkeiten haben. Ein eingestelltes Ereignis kann somit nach bestimmten Abst&auml;nden immer wieder auftauchen. F&uuml;r regelm&auml;&szlig;ige Ereignisse lassen sich einzelne Tage als Ausnahmen definieren, an denen das Ereignis <i>nicht</i> stattfindet  (mehr dazu im <a href="frequency.html">Reiter</a>).<br>Hat ein Ereignis keine Regelm&auml;&szlig;igkeit, so taucht es nur einmal am angegebenen Datum auf.
+<li><b>individuelle <a href="remind.html">Erinnerungen</a>:</b> In den Kalender-<a href="settings.html">Einstellungen</a> kann der globale Zeit-Abstand eingestellt werden, der erreicht sein muss, damit Erinnerungen f&uuml;r in k&uuml;rze auftretende Ereignisse erscheinen. Davon abweichend kann f&uuml;r jedes Ereignis ein individueller Abstand eingestellt werden. Handelt es sich bspw. um ein besonders wichtiges Ereignis, so kann eingestellt werden, dass bereits 5 Tage vorher eine Erinnerung erscheinen sollen. Der Standardwert f&uuml;r alle anderen Ereignisse ist 1 Tag vorher. Die Erinnerung kann auch komplett deaktiviert werden.
+</ul>
+<br>Prinzipiell wird unterschieden zwischen Benutzer-Ereignissen (werden vom Benutzer selber eingestellt) und Feier- bzw. Aktionstagen. Feier- und Aktionstage sind spezielle Ereignisse, die nicht ge&auml;ndert werden k&ouml;nnen. In den Kalender-<a href="settings.html">Einstellungen</a> k&ouml;nnen g&auml;ngige deutsche Feier- und Aktionstage aktiviert oder deaktiviert werden (z.B. je nach Bundesland).
+<br>Weiterhin k&ouml;nnen Ereignisse unterteilt werden in eint&auml;tige und mehrt&auml;tige Ereignisse. Mehrt&auml;gige Ereignisse haben ein Start- und Endedatum. F&uuml;r mehrt&auml;gige Ereignisse kann im aktuellen Entwicklungsstand des Kalenders keine Regelm&auml;&szlig;igkeit einstellt werden.
+
+</body>
+</html>
